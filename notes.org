@@ -1,0 +1,21 @@
+To make a sample 'POST' request like the video, I ensured that the headers included the following in Postman:
+- Content-Type: application/json
+
+I then ensured the 'Body' of the request was 'raw' > 'JSON', and then included the following inside of the 'body' of the request:
+#+BEGIN_SRC json
+{
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+}
+#+END_SRC
+
+This resulted in the following JSON response:
+#+BEGIN_SRC json
+{
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+    "id": 101
+}
+#+END_SRC
